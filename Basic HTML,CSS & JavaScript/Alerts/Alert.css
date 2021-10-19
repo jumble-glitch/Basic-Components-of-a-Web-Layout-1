@@ -1,0 +1,16 @@
+
+ /*   CSS code for ToDo Game with Alert msg project.  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,600&display=swap');
+ body{
+     background-color: #FFE0D9;
+ }
+
+ .main{
+     font-size: 18px;
+     font-family: 'Andada Pro', serif
+ }
+
+ .space{
+     margin-bottom: 3px;
+ }
