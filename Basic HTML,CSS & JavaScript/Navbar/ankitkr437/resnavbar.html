@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Navbar</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&display=swap" rel="stylesheet">
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+    #logo h1{
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 47px;
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+     div{
+         display:  flex;
+         background-color:rgb(60, 155, 16);
+         height: 80px;
+         width: 100%;
+     }
+     div ul {
+         display: flex;
+        margin-left: 500px;
+        margin-right: 50px;
+     }
+     div ul li{
+          padding: 27px 30px;
+     }
+     div ul li a{
+         font-size: 20px;
+         font-weight: bold;
+         font-family: 'Exo 2', sans-serif;
+     }
+    a:hover{
+    background: white;
+    color: black;
+    border-radius: 20px;
+    }
+  @media screen and (max-width: 952px){
+     div {
+         display: block;
+     };
+     #logo{
+         width: auto;
+     }
+     #logo h1{
+         text-align: center;
+         font-size: 52px;
+     }
+     div ul{
+         display: flex;
+         background-color: lightblue;
+         height: 70px;
+         width: 100%;
+         margin-right: 0px;
+         float: right;
+          margin-top: 9px;
+          text-align: center;
+     }
+     div ul li{
+         text-decoration: center;
+     }
+      
+}
+</style>
+ </head>
+ <body>
+    <div> 
+         <span id="logo">
+          <h1>logo</h1>          
+        </span>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us </a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+     </div>
+ </body>
+ </html>
