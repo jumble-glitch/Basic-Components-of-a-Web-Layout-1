@@ -1,0 +1,38 @@
+.container{
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    background-color: rgb(202, 210, 224);
+    width: 100%;
+}
+.container #about a{
+    text-decoration: none;
+    font-size: 30px;
+    margin:20px 20px;
+}
+ 
+.container .footer{
+   margin-right: 18px;
+}
+.container #contact{
+   margin-left: 14;
+}
+.heading{
+   text-align: center;
+}
+@media screen and (max-width: 1050px)
+{
+   .container{
+      margin-right: 100px;
+       
+   }
+}
+@media screen and (max-width: 952px) {
+   .container{
+       display: block;
+       width: 100%;
+   }
+   .heading{
+       text-align: center;
+   }
+}
