@@ -1,20 +1,19 @@
 button {
   border: none;
-  background-color: rgb(238, 97, 97);
   font-weight: bold;
   font-size : '0.75rem';
   color: white;
-  border-radius: 10px;
-  display: block;
-  padding: 15px 20px;
-  width: 150px;
+  background-color: black; 
+  height: 30px;
+  margin-left: 20px;
+  text-align: center;
 }
 
 .aler-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .alert-grid {
@@ -43,12 +42,12 @@ button {
 
 .alert-popUp {
   position: fixed;
+  top: 27%;
+  text-align: center;
+  padding: 0 30px;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 80%;
-  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  color: white;
 }
+

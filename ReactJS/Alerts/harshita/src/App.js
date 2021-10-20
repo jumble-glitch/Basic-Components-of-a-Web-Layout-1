@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AlertPopUp from './AlertPopUp';
-import './App.css';
+import "./App.css"
 
 class App extends Component {
     constructor() {
@@ -13,6 +13,38 @@ class App extends Component {
         }
     }
 
+    warningHandle = () => {
+        this.setState({isWarning: true})
+
+        setTimeout(() => {
+           this.setState({isWarning: false})
+        }, 3000)
+    }
+
+    infoHandle = () => {
+        this.setState({isInfo: true})
+
+        setTimeout(() => {
+           this.setState({isInfo: false})
+        }, 3000)
+    }
+
+    successHandle = () => {
+        this.setState({isSuccess: true})
+
+        setTimeout(() => {
+           this.setState({isSuccess: false})
+        }, 3000)
+    }
+
+    errorHandle = () => {
+        this.setState({isError: true})
+
+        setTimeout(() => {
+           this.setState({isError: false})
+        }, 3000)
+    }
+
     render() {
         return(
             <div className="aler-container">
@@ -20,17 +52,17 @@ class App extends Component {
                     className="alert-grid" 
                     
                 >
-                    <div className="alert-button" style={{ backgroundColor: "rgba(253, 169, 14, 0.5)" }} onClick={() => this.setState({isWarning: true})}>Warning</div>
-                    <div className="alert-button" style={{ backgroundColor: "rgba(14, 133, 253, 0.5" }} onClick={() => this.setState({isInfo: true})}>Information</div>
-                    <div className="alert-button" style={{ backgroundColor: "rgba(19, 253, 169, 0.5)" }} onClick={() => this.setState({isSuccess: true})}>Success</div>
-                    <div className="alert-button" style={{ backgroundColor: "rgba(253, 14, 14, 0.5)" }} onClick={() => this.setState({isError: true})}>Error</div>
+                    <div className="alert-button" style={{ backgroundColor: "rgba(253, 169, 14, 0.5)" }} onClick={this.warningHandle}>Warning</div>
+                    <div className="alert-button" style={{ backgroundColor: "rgba(14, 133, 253, 0.5" }} onClick={this.infoHandle}>Information</div>
+                    <div className="alert-button" style={{ backgroundColor: "rgba(19, 253, 169, 0.5)" }} onClick={this.successHandle}>Success</div>
+                    <div className="alert-button" style={{ backgroundColor: "rgba(253, 14, 14, 0.5)" }} onClick={this.errorHandle}>Error</div>
                 </div>
 
                 {
                     this.state.isWarning ? 
                     <AlertPopUp 
-                      alertType= {this.state.isWarning}
-                      text={"Warning"}
+                      alertType={"Warning"}
+                      text={"some Warning messages! "}
                       onCloseHandle = {() => this.setState({isWarning: false})}
                    /> : null
                 }
@@ -38,8 +70,8 @@ class App extends Component {
                 {
                     this.state.isInfo ? 
                     <AlertPopUp 
-                      alertType= {this.state.isInfo}
-                      text={"Info"}
+                      alertType={"Info"}
+                      text={"some Informational messages! "}
                       onCloseHandle = {() => this.setState({isInfo: false})}
                    /> : null
                 }
@@ -47,8 +79,8 @@ class App extends Component {
                 {
                     this.state.isSuccess ? 
                     <AlertPopUp 
-                      alertType= {this.state.isSuccess}
-                      text={"Success"}
+                      alertType={"Success"}
+                      text={"The Success messages! "}
                       onCloseHandle = {() => this.setState({isSuccess: false})}
                    /> : null
                 }
@@ -56,8 +88,8 @@ class App extends Component {
                 {
                     this.state.isError ? 
                     <AlertPopUp 
-                      alertType= {this.state.isError}
-                      text={"Error"}
+                      alertType={"Error"}
+                      text={"some Error messages! "}
                       onCloseHandle = {() => this.setState({isError: false})}
                    /> : null
                 }
