@@ -45,9 +45,9 @@ Please try to follow these guidelines:
 
 4. Set your streams so you can sync your clone with the original repo (get the latest updates)
 
-   - [ ] <code>git remote add upstream https://github.com/harshagrawal2412/Basic-Components-of-a-Web-Layout.git</code>
+   - [ ] <code>git remote add upstream https://github.com/pcon-hacktoberfest-21/Basic-Components-of-a-Web-Layout</code>
 
-   - [ ] <code>git pull upstream master</code>
+   - [ ] <code>git pull upstream main</code>
 
    - [ ] The above 2 commands will synchronize your forked version of the project with the actual repository.
 
