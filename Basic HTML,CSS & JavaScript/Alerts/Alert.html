@@ -1,35 +1,36 @@
-
- <!--  HTML code for ToDo list Game with Alert msg project.  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game with Alert msg</title>
+    <title>Alert Boxes</title>
     <link rel="stylesheet" href="Alert.css">
 </head>
 <body>
-    <div class="main">
-    <h1>Todo List</h1>
-    <ul>
-        <li class="space">"new" - Add A Todo</li>
-        <li class="space">"list" - List All Todos</li>
-        <li class="space">"delete" - Remove Specific Todo</li>
-        <li>"quit" - Quit App</li>
-    </ul>
-
-    <h3>RULES :</h3>
-    <ul>
-        <li class="space">You should enter a specific keyword of the game.</li>
-        <li class="space">Your entered keyword is not specific means, It will Shows the 'Alert' message.</li>
-        <li class="space">If you enter a list keyword, it will shows the 'Information' message.</li>
-        <li class="space">If you enter a delete keyword, it will shows the 'Warning' message.</li>
-        <li>If you enter a quit keyword, it will exits you from the game and it will shows the 'Success' message.</li>
-    </ul>
+    <div>
+        <h1>Alert Boxes</h1>
     </div>
-    
-    <script src="Alert.js"></script>
+
+    <div class="alert1">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Warning!! - Alert box.
+    </div>
+
+    <div class="alert2">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Information!! - Alert box.
+    </div>
+
+    <div class="alert3">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Success!! - Alert box.
+    </div>
+
+    <div class="alert4">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Error!! - Alert box.
+    </div>
+
 </body>
 </html>
