@@ -1,0 +1,1 @@
+You have to make accordions using HTML, CSS and JS. (no bootstrap)
