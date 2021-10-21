@@ -1,37 +1,57 @@
-* {
-  background-color: black;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: black;
 }
+:root{
+  --primary-color:rgb(155, 20, 233);
+}
+
 .loader {
-  background: url(pcon_logo.png) no-repeat center;
-  background-size: 100px;
-  height: 100vh;
-  width: 100vw;
-  left: 0;
-  right: 0;
-  top: 0;
-  position: absolute;
-  animation: popup 2s;
+  --clock-color: var(--primary-color);
+  --clock-width: 4rem;
+  --clock-radius: calc(var(--clock-width) / 2);
+  --clock-minute-length: calc(var(--clock-width) * 0.4);
+  --clock-hour-length: calc(var(--clock-width) * 0.2);
+  --clock-thickness: 0.2rem;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--clock-width);
+  height: var(--clock-width);
+  border: 3px solid var(--clock-color);
+  border-radius: 50%;
 }
-@keyframes popup {
-  0% {
-    transform: scale(1);
+  .loader::before,
+  .loader::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--clock-radius) * 0.25);
+    width: var(--clock-thickness);
+    background: var(--clock-color);
+    border-radius: 10px;
+    transform-origin: center calc(100% - calc(var(--clock-thickness) / 2));
+    animation: spin infinite linear;
   }
-  50% {
-    transform: scale(1.4);
+
+  .loader::before {
+    height: var(--clock-minute-length);
+    animation-duration: 2s;
   }
-  60% {
-    transform: scale(1.1);
+
+  .loader::after {
+    top: calc(var(--clock-radius) * 0.25 + var(--clock-hour-length));
+    height: var(--clock-hour-length);
+    animation-duration: 10s;
   }
-  70% {
-    transform: scale(1.2);
-  }
-  80% {
-    transform: scale(1);
-  }
-  90% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
   }
 }
