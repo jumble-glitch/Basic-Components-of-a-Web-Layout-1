@@ -1,0 +1,42 @@
+.accordion{
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.accordion .container {
+  background-color: rgb(47, 167, 253);
+  padding: 15px;
+  color: white;
+  border-bottom: 1px solid darkblue;
+}
+
+.accordion .container:hover {
+  background-color: rgba(47, 167, 253, 0.8);
+}
+
+.accordion .item div{
+  background-color: rgba(0, 149, 255,0.2);
+  padding: 15px;
+  border-bottom: 1px solid rgb(188, 241, 255);
+}
+
+.button {
+  background-color: lightpink;
+  width: 150px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 15px;
+  border-radius: 28px;
+}
+
+.button:hover {
+  background-color: rgb(253, 143, 159);
+}
+
+.button-content{
+  width: 60%;
+  margin: auto;
+  margin-top: 45px;
+}
