@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to left top , #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.column_left {
+    float: left;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.accordion_box {
+    background: #004d7a;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width:50%;
+    margin-top: 25%;
+}
+
+.accordion_box ul li {
+    list-style-type:none;
+}
+
+.accordion_box h3 {
+    font-size:17px;
+    padding:0 10px;
+}
+
+.accordion_box h3:hover{
+    border-left: 5px solid #a8eb12;
+    border-bottom: 5px solid #a8eb12;
+}
+
+.accordion_box ul ul li a{
+    color:white;
+    font-size:14px;
+    text-decoration:none;
+}
+
+.accordion_box ul ul li a:hover{
+    border-left: 5px solid #a8eb12;
+}
+
+.accordion_box ul ul{
+    display:none;
+}
+
+.accordion_box li.active ul{
+    display:block;
+}
+
+.column_right {
+    float: right;
+    width: 40%;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+}
+
+h1 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: white;
+}
+
