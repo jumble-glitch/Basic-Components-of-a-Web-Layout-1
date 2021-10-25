@@ -1,7 +1,10 @@
-$(".accordion_box h3").click(function(){
-    $(".accordion_box ul ul").slideUp("fast");
-    if(!$(this).next().is(":visible")){
-        $(this).next().slideDown("fast")
-    }
-})
+var heading = document.querySelectorAll(".drop_title");
+
+heading.forEach(function(el) {
+    el.addEventListener("click", function() {
+        el.parentNode.querySelector('.accordion_box li ul').classList.toggle('drop_list');
+    });
+});
+
+
 

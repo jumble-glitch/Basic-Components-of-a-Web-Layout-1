@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
-html {
+body, html {
     height: 100%;
 }
 
@@ -33,12 +33,12 @@ body {
     list-style-type:none;
 }
 
-.accordion_box h3 {
+.drop_title {
     font-size:17px;
     padding:0 10px;
 }
 
-.accordion_box h3:hover{
+.drop_title:hover{
     border-left: 5px solid #a8eb12;
     border-bottom: 5px solid #a8eb12;
 }
@@ -53,12 +53,13 @@ body {
     border-left: 5px solid #a8eb12;
 }
 
-.accordion_box ul ul{
+.drop_list{
     display:none;
 }
 
 .accordion_box li.active ul{
     display:block;
+    transition: all 2s ease-in-out;
 }
 
 .column_right {
@@ -76,3 +77,196 @@ h1 {
     color: white;
 }
 
+/*Media queries*/
+@media only screen and (max-width: 1024px) {
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column_left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion_box {
+        background: #004d7a;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width:75%;
+        margin-top: 5%;
+    }
+
+    .column_right {
+        width: 100%;
+    }
+
+    .text {
+        position: relative;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column_left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion_box {
+        background: #004d7a;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width:75%;
+        margin-top: 5%;
+    }
+
+    .column_right {
+        width: 100%;
+    }
+
+    .text {
+        position: relative;
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column_left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion_box {
+        background: #004d7a;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width:75%;
+        margin-top: 5%;
+    }
+
+    .column_right {
+        width: 100%;
+    }
+
+    .text {
+        position: relative;
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column_left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion_box {
+        background: #004d7a;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width:75%;
+        margin-top: 5%;
+    }
+
+    .column_right {
+        width: 100%;
+    }
+
+    .text {
+        position: relative;
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column_left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion_box {
+        background: #004d7a;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width:75%;
+        margin-top: 5%;
+    }
+
+    .column_right {
+        width: 100%;
+    }
+
+    .text {
+        position: relative;
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column_left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion_box {
+        background: #004d7a;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width:75%;
+        margin-top: 5%;
+    }
+
+    .column_right {
+        width: 100%;
+    }
+
+    .text {
+        position: relative;
+        margin-top: 10%;
+        text-align: center;
+    }
+}
