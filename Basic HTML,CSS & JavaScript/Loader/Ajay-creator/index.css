@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+*{
+    box-sizing:border-box ;
+}
+body {
+    background:#000;
+}
+.container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+}
+.circle{
+    position:relative ;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    border:solid 4px #fff;
+    padding:15px;
+}
+
+.inner-circle{
+    position:absolute ;
+    height:80px;
+    width:80px;
+    border:solid 2px #000;
+    border-radius:50%;
+    border-right-color:#fff;
+    animation:rotate 2s infinite linear;
+}
+.letter{
+    position:absolute;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    background:#000;
+    display:flex;
+    align-items:center ;
+    justify-content:center ;
+    font-size:40px;
+    color:#fff;
+    font-family: 'Train One', cursive;
+
+
+}
+.letter::before{
+    content:"";
+    animation: name 5s infinite linear;
+}
+@keyframes rotate{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* change the name with your name and adjust time intervals to make it work with your name */
+
+@keyframes name{
+    0%,100%{
+        opacity:1;
+        content:"A";
+        transform:scale(1);
+    }
+    12.5%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+    25%{
+        opacity:1;
+        content:"J";
+        transform:scale(1);
+    }
+    37.5%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+    
+    50%{
+        content:"A";
+        opacity:1;
+        transform:scale(1);
+    }
+    62.5%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+    75%{
+        content:"Y";
+        opacity:1;
+        transform:scale(1);
+    }
+    87.5%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+}
