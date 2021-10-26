@@ -1,0 +1,133 @@
+.login_bg {
+  background: var(--black-5);
+  font-size: 15px;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer {
+  width: 70%;
+  background-color: var(--black-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 5px 6px 7px -3px var(--grey-3);
+}
+
+.maincontainer .half {
+  flex: 1;
+}
+
+.maincontainer .left {
+  position: relative;
+  height: 93vh;
+  background-image: url("../loginSign.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+  color: var(--white-2);
+  text-align: center;
+}
+
+.welcome {
+  color: var(--grey-4);
+}
+
+.dull {
+  color: var(--grey-1);
+}
+
+.form_header {
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.form_main {
+  padding: 2rem;
+}
+
+.form_main label {
+  display: block;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.form_main input {
+  display: block;
+  width: 15rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 10px solid;
+  border-radius: 1rem;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    to left,
+    var(--primary),
+    var(--secondary)
+  );
+  color: var(--white-1);
+}
+
+.email,
+.password {
+  padding: 1rem;
+}
+
+.form_footer {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.login_btn {
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  width: 6rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(150deg, var(--primary), var(--secondary));
+  color: var(--white-2);
+  font-size: 1rem;
+}
+
+.login_btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+.register_link {
+  color: var(--white-1);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .maincontainer {
+    width: 90%;
+  }
+
+  .maincontainer .left {
+    display: none;
+  }
+}
