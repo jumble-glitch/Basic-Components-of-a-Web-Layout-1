@@ -1,0 +1,53 @@
+button {
+  border: none;
+  font-weight: bold;
+  font-size : '0.75rem';
+  color: white;
+  background-color: black; 
+  height: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.aler-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.alert-grid {
+  max-width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(224, 220, 220);
+  padding: 50px;
+  box-shadow: 0 8px 8px 3px lightgrey;
+}
+
+.alert-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: rgba(253, 169, 14, 0.5);
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-popUp {
+  position: fixed;
+  top: 27%;
+  text-align: center;
+  padding: 0 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
