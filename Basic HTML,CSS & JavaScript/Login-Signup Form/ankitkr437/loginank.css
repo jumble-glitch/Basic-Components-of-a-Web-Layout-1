@@ -1,0 +1,64 @@
+.box{
+    
+    border: 2px solid rgb(119, 224, 93);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:rgb(231, 181, 87);
+    height: 440px;
+    width: 300px;
+   margin: auto;
+    border-radius: 14px;
+    box-sizing: border-box;
+    position: relative;
+}
+.box button{
+    width: 80px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+.box #log{
+    margin-left: 51px;
+}
+.box #signup{
+    margin-left: 1px;
+}
+.box #sign{
+    display: none;
+}
+.box #login{
+    margin-left: 0px;
+    position: absolute;
+}
+#login input{
+    width:  253px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    box-shadow:  0 14px 3px 0 rgb(0 0 0 / 20%);
+     
+}
+ #login .name{
+     display: inline-block;
+     width: 140px;
+     height: 32px;
+ }
+ #sign input{
+    width:  253px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    box-shadow:  0 14px 3px 0 rgb(0 0 0 / 20%);
+     
+}
+ #sign .name{
+     display: inline-block;
+     width: 140px;
+     height: 32px;
+ }
+ 
