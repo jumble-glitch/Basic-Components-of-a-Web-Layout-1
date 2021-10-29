@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginank.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <button id="log" onclick="mylogin()">Login</button>
+        <h4 style="display: inline-block;">or</h4>
+        <button id="signup" onclick="mysignup()">Signup</button>
+        <form action="some1.php" method="get" id="login">
+                <span style="font-size: 16px;font-weight: bold;">first name</span> <span style="margin-left: 75px;font-size: 16px;font-weight: bold;">last name</span>
+                <input type="text" placeholder="first name"class="name"required>
+                <input type="text" placeholder="last name"  class="name"required>
+                <h4 style="margin-bottom: 0px;">Email</h4>
+                <input type="email" placeholder="email" style="display: block;"required>
+                <h4 style="margin-bottom: 0px;">create password</h4>
+                <input type="password" placeholder="Create password" style="display: block;"required>
+                <h4 style="margin-bottom: 0px;">confirm password</h4>
+                <input type="password" placeholder="Confirm password" style="display: block;margin-bottom: 4px;" required>
+                <input type="checkbox" required style="width:15px;height: 15px;"><span>Accepting terms and condition</span>
+                <input type="submit" id="botton" value="Login" class="lastbutton" style="background-color: rgb(133, 187, 175); text-align: center;margin-left: 13px;margin-top: 10px;height: 40px;">
+        </form>
+        <form action="some2.php" method="get" id="sign">
+            <h4 style="margin-bottom: 0px;">Email</h4>
+            <input type="email" placeholder="email" style="display: block;"required>    
+            <h4 style="margin-bottom: 0px;">Password</h4>
+                <input type="password" placeholder="Confirm password" style="display: block;margin-bottom: 4px;" required>
+                <input type="checkbox" required style="width:15px;height: 15px;"><span>remember me for a month</span>
+                <input type="submit" id="botton" value="Signup" class="lastbutton" style="background-color: rgb(133, 187, 175); text-align: center;margin-left: 13px;margin-top: 10px; height: 40px;">
+        </form>
+    </div>
+    <script>
+  function mylogin()
+  {
+       var x= document.getElementById('log');
+       var y= document.getElementById('signup');
+       var p= document.getElementById('login');
+       var q= document.getElementById('sign');
+       x.style.backgroundColor=" rgb(10, 139, 112)";
+       y.style.backgroundColor="white";
+       p.style.display="block";
+       q.style.display="none";
+  }
+  function mysignup()
+  {
+       var x= document.getElementById('log');
+       var y= document.getElementById('signup');
+       var p= document.getElementById('login');
+       var q= document.getElementById('sign');
+       y.style.backgroundColor=" rgb(10, 139, 112)";
+       x.style.backgroundColor="white";
+       q.style.display="block";
+       p.style.display="none";
+  }
+    </script>
+</body>
+
+</html>
