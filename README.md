@@ -45,12 +45,6 @@ Please try to follow these guidelines:
 
 4. Set your streams so you can sync your clone with the original repo (get the latest updates)
 
-   - [ ] <code>git remote add upstream https://github.com/pcon-hacktoberfest-21/Basic-Components-of-a-Web-Layout</code>
-
-   - [ ] <code>git pull upstream main</code>
-
-   - [ ] The above 2 commands will synchronize your forked version of the project with the actual repository.
-
 5. Create a branch with your username.
 
 6. Make the changes in your branch. For eg. You're creating a navbar using ReactJS and your username is xyz so you've to follow the path /ReactJS/Navbar/xyz/[YOUR_REACT_FILE] and same goes with others.
