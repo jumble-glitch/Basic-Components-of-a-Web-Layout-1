@@ -29,7 +29,7 @@ Please try to follow these guidelines:
 
 - [ ] Only use images/content that are available for free and don't need any special license.
 
-- [ ] Last but not the least, use your imagination to build the coolest app you can think of ! :heart_eyes_cat: :fire: :fire:
+- [ ] Last but not the least, use your imagination to build the coolest app you can think of ! :fire: :fire:
 
 ## How to Contribute
 
